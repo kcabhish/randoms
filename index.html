@@ -13,9 +13,13 @@
         <h1>Learning Import Export</h1>
         <div id="personForm"></div>
         <div id="addressForm"></div>
+        <button class="btn btn-danger" id="test">Danger</button>
         <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
         <script>
             $(document).ready(function(){
+                $("#test").on("click",function(){
+                    alert("I love you Jiggly Puff");
+                })
                 $("#personForm").load("/personForm.html");
                 $("#addressForm").load("/addressForm.html");
             });
